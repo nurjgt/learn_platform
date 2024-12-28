@@ -1,0 +1,58 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "IAWP",
+            "username": "Андрей",
+            "email": "qwertyasdf-9@tutamail.com",
+            "password": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+            "id": 2,
+            "name": "IAWP",
+            "username": "Андрей-89",
+            "email": "qwertyasdf-9@tutamail.com",
+            "password": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+            "id": 3,
+            "name": "IAWP",
+            "username": "admin",
+            "email": "qwertyasdf-9@tutamail.com",
+            "password": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+            "id": 4,
+            "name": "nurika",
+            "username": "nurika",
+            "email": "nurikkk@gmail.com",
+            "password": "26d6718bad1af92b706e6c3d7ea55ce555e774be"
+        },
+        {
+            "id": 5,
+            "name": "nurik",
+            "username": "nurik",
+            "email": "nurik@gmail.com",
+            "password": "101d8eba11205c16eadb7684a27c64aab0654c80"
+        }
+    ],
+    "courses": [],
+    "chapters": [],
+    "cookies": [
+        {
+            "cookie": "nkrflu8nuda1xhba",
+            "user_id": 4,
+            "expires": 1734996892.821104
+        },
+        {
+            "cookie": "1xxdrq6cxxzpxkro",
+            "user_id": 5,
+            "expires": 1735077906.2422707
+        },
+        {
+            "cookie": "1b8enbq0fhzpi7zk",
+            "user_id": 5,
+            "expires": 1735399245.1726696
+        }
+    ]
+}

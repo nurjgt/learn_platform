@@ -1,0 +1,58 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "nurik",
+            "username": "nurik",
+            "email": "nurik@gmail.com",
+            "password": "101d8eba11205c16eadb7684a27c64aab0654c80"
+        },
+        {
+            "id": 2,
+            "name": "zhenis",
+            "username": "zhye",
+            "email": "zhye@gmail.com",
+            "password": "ef59c9152dbc728da33a7fb89dfa1347f35fff33"
+        },
+        {
+            "id": 3,
+            "name": "misndl",
+            "username": "dsjdisn",
+            "email": "ndjsnd@gmail.com",
+            "password": "7110eda4d09e062aa5e4a390b0a572ac0d2c0220"
+        }
+    ],
+    "courses": [],
+    "cookies": [
+        {
+            "cookie": "txmr7bjullrnn4d4",
+            "user_id": 1,
+            "expires": 1734894164.5081444
+        },
+        {
+            "cookie": "3bytqv820aqb5h0g",
+            "user_id": 1,
+            "expires": 1734896904.9988177
+        },
+        {
+            "cookie": "1ucy0aszaxwb2svr",
+            "user_id": 1,
+            "expires": 1734896951.8849049
+        },
+        {
+            "cookie": "kubst0nbowjb8tc9",
+            "user_id": 3,
+            "expires": 1734897123.6508787
+        },
+        {
+            "cookie": "83n52nwrmldstxu9",
+            "user_id": 1,
+            "expires": 1734903245.0653584
+        },
+        {
+            "cookie": "3wvbw4af8dghn9vv",
+            "user_id": 1,
+            "expires": 1734967772.7747982
+        }
+    ]
+}
