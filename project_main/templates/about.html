@@ -46,6 +46,113 @@
 
 	<!-- Modernizr JS -->
 	<script src="{{ url_for('static',filename='js/modernizr-2.6.2.min.js') }}"></script>
+	<style>
+		.animated-button {
+			position: relative;
+			display: flex;
+			align-items: center;
+			gap: 4px;
+			padding: 13px 30px;
+			border: 4px solid;
+			border-color: transparent;
+			font-size: 12px;
+			border-radius: 100px;
+			font-weight: 600;
+			color: rgba(0, 0, 0, 0.9);
+			box-shadow: 0 0 0 2px #ffffff;
+			cursor: pointer;
+			overflow: hidden;
+			transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+			margin: 6px 0 6px 10px;
+		}
+
+		.animated-button svg {
+			position: absolute;
+			width: 24px;
+			fill: rgba(0, 0, 0, 0.9);
+			z-index: 9;
+			transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+		}
+
+		.animated-button .arr-1 {
+			right: 16px;
+		}
+
+		.animated-button .arr-2 {
+			left: -25%;
+		}
+
+		.animated-button .circle {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 20px;
+			height: 20px;
+			background-color: #c5e5e4;
+			border-radius: 50%;
+			opacity: 0;
+			transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+		}
+
+		.animated-button .text {
+			position: relative;
+			z-index: 1;
+			transform: translateX(-12px);
+			transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+		}
+
+		.animated-button:hover {
+			box-shadow: 0 0 0 12px transparent;
+			color: rgba(0, 0, 0, 0.9);
+			border-radius: 12px;
+		}
+
+		.animated-button:hover .arr-1 {
+			right: -25%;
+		}
+
+		.animated-button:hover .arr-2 {
+			left: 16px;
+		}
+
+		.animated-button:hover .text {
+			transform: translateX(12px);
+		}
+
+		.animated-button:hover svg {
+			fill: rgba(0, 0, 0, 0.9);
+		}
+
+		.animated-button:active {
+			scale: 0.95;
+			box-shadow: 0 0 0 4px greenyellow;
+		}
+
+		.animated-button:hover .circle {
+			width: 220px;
+			height: 220px;
+			opacity: 1;
+		}
+		.col-xs-12.text-right {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			gap: 10px; /* Расстояние между элементами */
+		}
+
+		.fh5co-social {
+			display: flex;
+			gap: 10px; /* Расстояние между иконками */
+			margin: 0; /* Уберите возможные отступы */
+			padding: 0;
+		}
+
+		.fh5co-social li {
+			list-style: none; /* Уберите маркеры списка */
+		}
+
+	</style>
 	</head>
 	<body>
 		
@@ -57,7 +164,6 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 text-right">
-					
 						<p class="num">Call: +7 777 777 77 77</p>
 						<ul class="fh5co-social">
 							<li><a href="#"><i class="icon-facebook2"></i></a></li>
@@ -65,11 +171,23 @@
 							<li><a href="#"><i class="icon-instagram"></i></a></li>
 							<li><a href="https://wa.me/+77072928239"><i class="icon-whatsapp"></i></a></li>
 						</ul>
-						ul.
-					</div>
+						<a href="{{ url_for('login') }}">
+							<button class="animated-button">
+								<svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
+									<path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+								</svg>
+								<span class="text">L O G I N</span>
+								<span class="circle"></span>
+								<svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
+									<path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+								</svg>
+							</button>
+						</a>
+					</div>					
 				</div>
 			</div>
 		</div>
+		
 		<div class="top-menu">
 			<div class="container">
 				<div class="row">
@@ -122,7 +240,6 @@
 			   			<div class="col-md-8 col-md-offset-2 text-center slider-text">
 			   				<div class="slider-text-inner">
 			   					<h1 class="heading-section">About Us</h1>
-									
 			   				</div>
 			   			</div>
 			   		</div>
@@ -136,13 +253,13 @@
 		<div class="container">
 			<div class="col-md-6 animate-box">
 				<span>About Our Team</span>
-				<h2>Welcome to Innowcja Website</h2>
-				<p>Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat cauctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per Mauris in erat justo.</p>
-				<p>Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed.</p>
-				<p>Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat cauctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per Mauris in erat justo.</p>
+				<h2>Welcome to "Teach-Me" educational platform</h2>
+				<p>At Teach-Me, we are dedicated to empowering learners of all ages and backgrounds to achieve their personal and professional goals. Our platform offers carefully curated courses, ranging from programming to management, designed to provide both theoretical knowledge and practical skills.</p>
+				<p>Our mission is simple: to make learning accessible, engaging, and impactful. We believe in the power of education to transform lives, and that's why we collaborate with experienced instructors and industry experts to deliver high-quality content tailored to real-world needs.</p>
+				<p>Join us in shaping the future of learning. Together, let’s unlock your potential and achieve great things.</p>
 			</div>
 			<div class="col-md-6">
-				<img class="img-responsive" src="images/img_bg_2.jpg" alt="Free HTML5 Bootstrap Template">
+				<img style="width: 100%;" src="../static/img/img_bg_2.webp" alt="img">
 			</div>
 		</div>
 	</div>
