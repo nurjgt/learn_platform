@@ -3,14 +3,14 @@
         {
             "id": 1,
             "name": "IAWP",
-            "username": "Андрей",
+            "username": "пїЅпїЅпїЅпїЅпїЅпїЅ",
             "email": "qwertyasdf-9@tutamail.com",
             "password": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
         },
         {
             "id": 2,
             "name": "IAWP",
-            "username": "Андрей-89",
+            "username": "пїЅпїЅпїЅпїЅпїЅпїЅ-89",
             "email": "qwertyasdf-9@tutamail.com",
             "password": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
         },
@@ -68,16 +68,6 @@
             "cookie": "dfyaoeo8jx2zu85d",
             "user_id": 5,
             "expires": 1735487478.0746114
-        },
-        {
-            "cookie": "ee657ml6q9rw19oo",
-            "user_id": 5,
-            "expires": 1735500072.4749389
-        },
-        {
-            "cookie": "tf2xo1j8h44bdvk8",
-            "user_id": 5,
-            "expires": 1735500328.0979037
         }
     ]
 }
