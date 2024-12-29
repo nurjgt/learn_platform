@@ -20,6 +20,13 @@
             "username": "dsjdisn",
             "email": "ndjsnd@gmail.com",
             "password": "7110eda4d09e062aa5e4a390b0a572ac0d2c0220"
+        },
+        {
+            "id": 4,
+            "name": "Zhenisbek",
+            "username": "zhenis",
+            "email": "kaiyrbekuly37@gmail.com",
+            "password": "01d21d3bf10f0815298f711c7d78c88104296c03"
         }
     ],
     "courses": [],
@@ -53,6 +60,11 @@
             "cookie": "3wvbw4af8dghn9vv",
             "user_id": 1,
             "expires": 1734967772.7747982
+        },
+        {
+            "cookie": "u1663zhevcf95tih",
+            "user_id": 4,
+            "expires": 1735490254.9723246
         }
     ]
 }
