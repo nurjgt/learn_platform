@@ -63,12 +63,12 @@
 				<div class="row">
 					<div class="col-xs-12 text-right">
 						
-						<p class="num">Call: +213658079416</p>
+						<p class="num">Call: +7 777 777 77 77</p>
 						<ul class="fh5co-social">
-							<li><a href="https://web.facebook.com/walid.gstreet"><i class="icon-facebook2"></i></a></li>
-							<li><a href="#"><i class="icon-twitter2"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble2"></i></a></li>
-							<li><a href="#"><i class="icon-github"></i></a></li>
+							<li><a href="#"><i class="icon-facebook2"></i></a></li>
+							<li><a href="https://t.me/Innowacja_bot"><i class="icon-telegram"></i></a></li>
+							<li><a href="#"><i class="icon-instagram"></i></a></li>
+							<li><a href="https://wa.me/+77072928239 "><i class="icon-whatsapp"></i></a></li>
 						</ul>
 					</div>
 				</div>
@@ -84,7 +84,7 @@
 						<ul>
 							<li class="active"><a href="{{ url_for('indexc') }}"><b>Home</b></a></li>
 							<li><a href="{{ url_for('courses') }}"><b>Courses</b></a></li>
-							<li><a href="{{ url_for('forum') }}"><b>Forum</b></a></li>
+							<li><a href="{{ url_for('Quizz') }}"><b>Quizz</b></a></li>
 							<li><a href="{{ url_for('about') }}"><b>About</b></a></li>
 							
 							
@@ -123,7 +123,7 @@
 			   			<div class="col-md-8 col-md-offset-2 text-center slider-text">
 			   				<div class="slider-text-inner">
 			   					<h1>The Roots of Education are Bitter, But the Fruit is Sweet</h1>
-									<h2>Brought to you by Damou walid & Hammouda Ryma</h2>
+									<h2>From the Kazakhstan team</h2>
 									<p><a class="btn btn-primary btn-lg" href="{{ url_for('courses') }}">Start Learning Now!</a></p>
 			   				</div>
 			   			</div>
@@ -137,7 +137,7 @@
 			   			<div class="col-md-8 col-md-offset-2 text-center slider-text">
 			   				<div class="slider-text-inner">
 			   					<h1>The Roots of Education are Bitter, But the Fruit is Sweet</h1>
-			   					<h2>Brought to you by Damou walid & Hammouda Ryma</h2>
+			   					<h2>From the Kazakhstan team</h2>
 									<p><a class="btn btn-primary btn-lg btn-learn" href="{{ url_for('courses') }}">Start Learning Now!</a></p>
 			   				</div>
 			   			</div>
@@ -151,7 +151,7 @@
 			   			<div class="col-md-8 col-md-offset-2 text-center slider-text">
 			   				<div class="slider-text-inner">
 			   					<h1>The Roots of Education are Bitter, But the Fruit is Sweet</h1>
-			   					<h2>Brought to you by Damou walid & Hammouda Ryma</h2>
+			   					<h2>From the Kazakhstan team</h2>
 									<p><a class="btn btn-primary btn-lg btn-learn" href="{{ url_for('courses') }}">Start Learning Now!</a></p>
 			   				</div>
 			   			</div>
@@ -300,7 +300,28 @@
 			<div class="row animate-box">
 				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
 					<h2>Our Populaire Courses</h2>
-					
+					<div class="courses-container" id="coursesContainer">
+						<div class="course" onclick="openCourseModal('https://www.youtube.com/embed/_uQrJ0TkZlc', 'Python for Beginners', 'Learn the basics of Python, including variables, loops, functions, and more.', 'test.html')">
+						  <iframe class="video-preview" src="https://www.youtube.com/embed/_uQrJ0TkZlc" frameborder="0" allowfullscreen></iframe>
+						  <h3>Course: Python for Beginners</h3>
+						</div>
+						<div class="course" onclick="openCourseModal('https://www.youtube.com/embed/gfkTfcpWqAY', 'C++/C# Programming', 'Master the basics of C++ and C# with hands-on examples and projects.', 'test.html')">
+						  <iframe class="video-preview" src="https://www.youtube.com/embed/gfkTfcpWqAY" frameborder="0" allowfullscreen></iframe>
+						  <h3>Course: C++/C# Programming</h3>
+						</div>
+						<div class="course" onclick="openCourseModal('https://www.youtube.com/embed/jFfo23yIWac', 'Go Programming', 'A comprehensive course on Go Programming Language.', 'test.html')">
+						  <iframe class="video-preview" src="https://www.youtube.com/embed/jFfo23yIWac" frameborder="0" allowfullscreen></iframe>
+						  <h3>Course: Go Programming</h3>
+						</div>
+						<div class="course" onclick="openCourseModal('https://www.youtube.com/embed/yUOC-Y0f5ZQ', 'Product Manager', 'Learn how to become a successful Product Manager in this course.', 'test.html')">
+						  <iframe class="video-preview" src="https://www.youtube.com/embed/yUOC-Y0f5ZQ" frameborder="0" allowfullscreen></iframe>
+						  <h3>Course: Product Manager</h3>
+						</div>
+						<div class="course" onclick="openCourseModal('https://www.youtube.com/embed/xiUTqnI6xk8', 'SQL and Databases', 'This course will introduce you to SQL and database management systems.', 'test.html')">
+						  <iframe class="video-preview" src="https://www.youtube.com/embed/xiUTqnI6xk8" frameborder="0" allowfullscreen></iframe>
+						  <h3>Course: SQL and Databases</h3>
+						</div>
+					  </div>	
 				</div>
 			</div>
 			{% for i in all_courses %}
@@ -356,22 +377,24 @@
 	
 
 
-	<footer id="fh5co-footer" role="contentinfo" style="background-image: url(images/img_bg_4.jpg);">
-		<div class="overlay"></div>
+	<footer id="fh5co-footer" role="contentinfo" style="background-color: #333333; color: #ffffff; padding: 20px 0;">
 		<div class="container">
-			<div class="row row-pb-md">
-				
-			</div>
-
 			<div class="row copyright">
-				<div class="col-md-12 text-center">
+				<div class="col-md-12 text-center" style="color: #ffffff; font-size: 16px;">
 					<p>
-						<small class="block">&copy; 2019 Teach-me. All Rights Reserved.</small> 
-						<small class="block">Designed by Damou walid & Hammouda Ryma</a>
+						<small class="block" style="display: block; margin-bottom: 5px;">&copy; 2024 Innowacja.</small>
+						<small class="block" style="display: block; margin-bottom: 10px;">
+							Designed by <a href="#" target="_blank" style="color: #ffffff; text-decoration: underline;">Kazakhstan Team</a>
+						</small>
 					</p>
+					<ul class="fh5co-social-icons" style="list-style: none; padding: 0; margin: 0; display: inline-flex; gap: 10px;">
+						<li><a href="#" style="color: #ffffff; font-size: 20px;"><i class="icon-twitter"></i></a></li>
+						<li><a href="#" style="color: #ffffff; font-size: 20px;"><i class="icon-facebook"></i></a></li>
+						<li><a href="#" style="color: #ffffff; font-size: 20px;"><i class="icon-linkedin"></i></a></li>
+						<li><a href="#" style="color: #ffffff; font-size: 20px;"><i class="icon-dribbble"></i></a></li>
+					</ul>
 				</div>
 			</div>
-
 		</div>
 	</footer>
 	</div>
