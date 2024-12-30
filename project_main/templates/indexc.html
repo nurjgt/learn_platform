@@ -3,7 +3,7 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Teach-Me</title>
+	<title>INNOWACJA</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
 	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
@@ -20,6 +20,8 @@
 	<meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
 	
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="{{ url_for('static',filename='css/animate.css') }}">
@@ -69,6 +71,7 @@
 							<li><a href="https://t.me/Innowacja_bot"><i class="icon-telegram"></i></a></li>
 							<li><a href="#"><i class="icon-instagram"></i></a></li>
 							<li><a href="https://wa.me/+77072928239 "><i class="icon-whatsapp"></i></a></li>
+							
 						</ul>
 					</div>
 				</div>
@@ -78,7 +81,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-2">
-						<div id="fh5co-logo"><a href="{{ url_for('indexc') }}"><i class="icon-study"></i>Teach-Me<span>.</span></a></div>
+						<div id="fh5co-logo"><a href="{{ url_for('indexc') }}"><i class="icon-study"></i>INNOWACJA<span>.</span></a></div>
 					</div>
 					<div class="col-xs-10 text-right menu-1">
 						<ul>
@@ -90,6 +93,7 @@
 							
 
 							<li><a href="{{ url_for('contact') }}"><b>Contact</b></a></li>
+							<li><a href="{{ url_for( 'login' ) }}"><b>Login</b></a></li>
 							{% if login_button == 1 %}
 							<li class="btn-cta"><a href="{{ url_for('login') }}"><span><b>Login</b></span></a></li>
 							
@@ -167,102 +171,53 @@
 			<div class="row animate-box">
 				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
 					<h2>Course categories</h2>
-					
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-3 col-sm-6 text-center animate-box">
 					<div class="services">
-						<span class="icon">
-							<i class="icon-shop"></i>
+						<span class="icon animate-icon">
+							<i class="fas fa-shield-alt"></i>
 						</span>
 						<div class="desc">
-							<h3><a href="#">Business</a></h3>
-							
+							<h3><a href="#">Information security systems</a></h3>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 text-center animate-box">
 					<div class="services">
-						<span class="icon">
-							<i class="icon-heart4"></i>
-						</span>
-						<div class="desc">
-							<h3><a href="#">Health &amp; Psychology</a></h3>
-							
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 text-center animate-box">
-					<div class="services">
-						<span class="icon">
-							<i class="icon-banknote"></i>
+						<span class="icon animate-icon">
+							<i class="fas fa-calculator"></i>
 						</span>
 						<div class="desc">
 							<h3><a href="#">Accounting</a></h3>
-							
 						</div>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 text-center animate-box">
 					<div class="services">
-						<span class="icon">
-							<i class="icon-lab2"></i>
+						<span class="icon animate-icon">
+							<i class="fas fa-microscope"></i>
 						</span>
 						<div class="desc">
 							<h3><a href="#">Science &amp; Technology</a></h3>
-							
 						</div>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-6 text-center animate-box">
 					<div class="services">
-						<span class="icon">
-							<i class="icon-photo"></i>
-						</span>
-						<div class="desc">
-							<h3><a href="#">Art &amp; Media</a></h3>
-							
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 text-center animate-box">
-					<div class="services">
-						<span class="icon">
-							<i class="icon-home-outline"></i>
-						</span>
-						<div class="desc">
-							<h3><a href="#">Real Estate</a></h3>
-							
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 text-center animate-box">
-					<div class="services">
-						<span class="icon">
-							<i class="icon-bubble3"></i>
-						</span>
-						<div class="desc">
-							<h3><a href="#">Language</a></h3>
-							
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 text-center animate-box">
-					<div class="services">
-						<span class="icon">
-							<i class="icon-world"></i>
+						<span class="icon animate-icon">
+							<i class="fas fa-code"></i>
 						</span>
 						<div class="desc">
 							<h3><a href="#">Web &amp; Programming</a></h3>
-							
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
+	
 	<div id="fh5co-counter" class="fh5co-counters" style="background-image: url(images/img_bg_4.jpg);" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
@@ -270,36 +225,37 @@
 				<div class="col-md-10 col-md-offset-1">
 					<div class="row">
 						<div class="col-md-3 col-sm-6 text-center animate-box">
-							<span class="icon"><i class="icon-world"></i></span>
-							<span class="fh5co-counter js-counter" data-from="0" data-to="3297" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="fh5co-counter-label">Foreign Followers</span>
+							<span class="icon" style="color: white;"><i class="fas fa-lightbulb"></i></span>
+							<span class="fh5co-counter-label" style="margin: 0; margin-top: 20px; margin-bottom: 5px; color: white;">Innovative Learning</span>
+							<p style="color: white; margin: 0;">Unique methods tailored for individual growth and success.</p>
 						</div>
 						<div class="col-md-3 col-sm-6 text-center animate-box">
-							<span class="icon"><i class="icon-study"></i></span>
-							<span class="fh5co-counter js-counter" data-from="0" data-to="3700" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="fh5co-counter-label">Students Enrolled</span>
+							<span class="icon" style="color: white;"><i class="fas fa-user-friends"></i></span>
+							<span class="fh5co-counter-label" style="margin: 0; margin-top: 20px; margin-bottom: 5px; color: white;">Community Building</span>
+							<p style="color: white;">Creating an active and supportive learning community.</p>
 						</div>
 						<div class="col-md-3 col-sm-6 text-center animate-box">
-							<span class="icon"><i class="icon-bulb"></i></span>
-							<span class="fh5co-counter js-counter" data-from="0" data-to="5034" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="fh5co-counter-label">Classes Complete</span>
+							<span class="icon" style="color: white;"><i class="fas fa-certificate"></i></span>
+							<span class="fh5co-counter-label" style="margin: 0; margin-top: 20px; margin-bottom: 5px; color: white;">Expert Certifications</span>
+							<p style="color: white;">Programs designed to enhance professional skills and careers.</p>
 						</div>
 						<div class="col-md-3 col-sm-6 text-center animate-box">
-							<span class="icon"><i class="icon-head"></i></span>
-							<span class="fh5co-counter js-counter" data-from="0" data-to="1080" data-speed="5000" data-refresh-interval="50"></span>
-							<span class="fh5co-counter-label">Certified Teachers</span>
+							<span class="icon" style="color: white;"><i class="fas fa-rocket"></i></span>
+							<span class="fh5co-counter-label" style="margin: 0; margin-top: 20px; margin-bottom: 5px; color: white;">Future Vision</span>
+							<p style="color: white;">Focused on building a better future through education and innovation.</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
+	
+	
 	<div id="fh5co-course">
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-					<h2>Our Populaire Courses</h2>
+					<h2>Our Popular Courses</h2>
 					<div class="courses-container" id="coursesContainer">
 						<div class="course" onclick="openCourseModal('https://www.youtube.com/embed/_uQrJ0TkZlc', 'Python for Beginners', 'Learn the basics of Python, including variables, loops, functions, and more.', 'test.html')">
 						  <iframe class="video-preview" src="https://www.youtube.com/embed/_uQrJ0TkZlc" frameborder="0" allowfullscreen></iframe>
@@ -349,31 +305,48 @@
 		</div>
 	</div>
 
-	<div id="fh5co-blog">
+	<div id="fh5co-blog" style="padding: 50px 0; background-color: #f4f4f4;">
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2> Events</h2>
+					<h2 style="font-size: 36px; font-weight: bold; color: #333;">Events</h2>
 				</div>
 			</div>
 			<div class="row row-padded-mb">
-				{%for i in events%}
-
-				<div class="col-md-4 animate-box">
-					<div class="fh5co-event">
-						<div class="date text-center"><span>15<br>Mar.</span></div>
-						<h3><a href="#">{{i[1]}}</a></h3>
-						<p>{{i[2]|safe}}</p>
-						<p><a href="{{url_for('Event',id=i[0])}}">Read More</a></p>
+				<!-- Event 1: Hack4Future Hackathon -->
+				<div class="col-md-4 animate-box" style="padding: 15px;">
+					<div class="fh5co-event" style="padding: 0; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden;">
+						<h3 style="font-size: 22px; color: #333; margin-top: 15px; text-align: center;">
+							<a href="#" style="color: #007bff;">Hack4Future Hackathon Coming Soon</a>
+						</h3>
+						<p style="font-size: 16px; color: #777; padding: 10px 15px;">Join us for an exciting hackathon where developers come together to innovate and solve real-world problems. This year, we focus on sustainable tech solutions.</p>
+						<p style="text-align: center; font-size: 16px; color: #ff5733; font-weight: bold;">Coming Soon</p>
 					</div>
 				</div>
-			{%endfor%}
-				
+				<!-- Event 2: Tech Conference -->
+				<div class="col-md-4 animate-box" style="padding: 15px;">
+					<div class="fh5co-event" style="padding: 0; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden;">
+						<h3 style="font-size: 22px; color: #333; margin-top: 15px; text-align: center;">
+							<a href="#" style="color: #28a745;">Tech Conference 2025</a>
+						</h3>
+						<p style="font-size: 16px; color: #777; padding: 10px 15px;">A global tech conference featuring speakers from top tech companies. Learn about the latest trends in AI, software development, and cybersecurity.</p>
+						<p style="text-align: center; font-size: 16px; color: #ff5733; font-weight: bold;">Coming Soon</p>
+					</div>
+				</div>
+				<!-- Event 3: Web Development Bootcamp -->
+				<div class="col-md-4 animate-box" style="padding: 15px;">
+					<div class="fh5co-event" style="padding: 0; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden;">
+						<h3 style="font-size: 22px; color: #333; margin-top: 15px; text-align: center;">
+							<a href="#" style="color: #ffc107;">Web Development Bootcamp</a>
+						</h3>
+						<p style="font-size: 16px; color: #777; padding: 10px 15px;">A comprehensive 4-week bootcamp where you’ll learn HTML, CSS, JavaScript, and more, building your own web projects from scratch.</p>
+						<p style="text-align: center; font-size: 16px; color: #ff5733; font-weight: bold;">Coming Soon</p>
+					</div>
+				</div>
 			</div>
-			
 		</div>
 	</div>
-
+	
 	
 
 
