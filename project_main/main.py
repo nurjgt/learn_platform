@@ -127,6 +127,25 @@ def logout():
     resp.set_cookie("sessionid", "", expires=0)
     return resp
 
+@app.route("/forgot", methods=["GET", "POST"])
+def forgot_password():
+    if request.method == "GET":
+        return render_template("forgot.html")
+
+    if request.method == "POST":
+        email = request.form.get("email")
+        if not email:
+            flash("Email is required.")
+            return redirect("/forgot")
+
+        if find_user_by_email(email):
+            # Здесь вы можете отправить письмо для сброса пароля
+            flash("A reset link has been sent to your email.")
+        else:
+            flash("Email not found.")
+
+        return redirect("/forgot")
+
 @app.route("/courses", methods=["GET"])
 def courses():
     cookie = request.cookies.get("sessionid")
