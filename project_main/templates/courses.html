@@ -237,11 +237,10 @@
 		</div>
 	</nav>
 	
-
 	<aside id="fh5co-hero">
 		<div class="flexslider">
 			<ul class="slides">
-		    	<li style="background-image: url({{ url_for('static',filename='img/courses.jpg')}});">
+		    	<li style="background-image: url('{{ url_for('static', filename='img/courses.jpg') }}');">
 		    		<div class="overlay-gradient"></div>
 		    		<div class="container">
 		    			<div class="row">
@@ -256,6 +255,7 @@
 		  	</ul>
 	  	</div>
 	</aside>
+	
 	<main>
 		<section id="courses">
 			<h2 style="text-align: center;">Programming Courses</h2>

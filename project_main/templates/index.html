@@ -1,57 +1,117 @@
-{% include"header.html" %}
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<div class="container-fluid">
-<div class="container">
-	<div class="jumbotron">
-<div class="row w-100">
-        <div class="col-md-3">
-            <div class="card border-info mx-sm-1 p-3">
-                <div class="card border-info shadow text-info p-3 my-card" ><span class="fa fa-book-reader" aria-hidden="true"></span></div>
-                <div class="text-info text-center mt-3"><h4>Signed Courses</h4>
+{% include "header.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Example</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- FlexSlider CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/flexslider.min.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="static/css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body>
+
+<!-- Slider Section -->
+<aside id="fh5co-hero">
+    <div class="flexslider">
+        <ul class="slides">
+            <li style="background-image: url({{ url_for('static',filename='img/c1.jpg') }});">
+                <div class="overlay-gradient"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 text-center slider-text">
+                            <div class="slider-text-inner">
+                                <h1>The Roots of Education are Bitter, But the Fruit is Sweet</h1>
+                                <h2>From the Kazakhstan team</h2>
+                                <p><a class="btn btn-primary btn-lg" href="{{ url_for('courses') }}">Start Learning Now!</a></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="text-info text-center mt-2"><h1>{%if nb_courses%}{{nb_courses[0]}}{%else%}0{%endif%}</h1></div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card border-success mx-sm-1 p-3">
-                <div class="card border-success shadow text-success p-3 my-card"><span class="fa fa-star" aria-hidden="true"></span></div>
-                <div class="text-success text-center mt-3"><h4>Current Points Scored</h4></div>
-                <div class="text-success text-center mt-2"><h1>{%if s%}{{s}}{%else%}0{%endif%}</h1></div>
-                <br>
-
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card border-danger mx-sm-1 p-3">
-                <div class="card border-danger shadow text-danger p-3 my-card" ><span class="fa fa-hands-helping" aria-hidden="true"></span></div>
-                <div class="text-danger text-center mt-3"><h4>Forum Participation</h4></div>
-                <div class="text-danger text-center mt-2"><h1>{{cmt}}</h1></div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card border-warning mx-sm-1 p-3">
-                <div class="card border-warning shadow text-warning p-3 my-card" ><span class="fa fa-comments" aria-hidden="true"></span></div>
-                <div class="text-warning text-center mt-3"><h4>Reply On Forum</h4></div>
-                <div class="text-warning text-center mt-2"><h1>{{cmt}}</h1></div>
-            </div>
-</div>
-</div></div></div></div>
-<br>
-<br>
+            </li>
+            <li style="background-image: url({{ url_for('static',filename='img/c2.jpg') }});">
+                <div class="overlay-gradient"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 text-center slider-text">
+                            <div class="slider-text-inner">
+                                <h1>The Roots of Education are Bitter, But the Fruit is Sweet</h1>
+                                <h2>From the Kazakhstan team</h2>
+                                <p><a class="btn btn-primary btn-lg btn-learn" href="{{ url_for('courses') }}">Start Learning Now!</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li style="background-image: url({{ url_for('static',filename='img/c4.jpg') }});">
+                <div class="overlay-gradient"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 text-center slider-text">
+                            <div class="slider-text-inner">
+                                <h1>The Roots of Education are Bitter, But the Fruit is Sweet</h1>
+                                <h2>From the Kazakhstan team</h2>
+                                <p><a class="btn btn-primary btn-lg btn-learn" href="{{ url_for('courses') }}">Start Learning Now!</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li style="background-image: url({{ url_for('static',filename='img/c3.jpg') }});">
+                <div class="overlay-gradient"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 text-center slider-text">
+                            <div class="slider-text-inner">
+                                <h1>The Roots of Education are Bitter, But the Fruit is Sweet</h1>
+                                <h2>From the Kazakhstan team</h2>
+                                <p><a class="btn btn-primary btn-lg btn-learn" href="{{ url_for('courses') }}">Start Learning Now!</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</aside>
+<!-- Charts Section -->
 <div class="container">
-	
-
-	{%for i in charts%}
-	<h5 style="color: #060547; font-family: sans-serif;">{{i[0]}}</h5>
-	<div class="progress">
-  <div class="progress-bar" style="width:{{i[2]}}%; background-color: #ed2d2d">
-  	{{i[0]}}&nbsp;{{i[2]}}%
-  </div>
-	</div>
-	<br>
-	{%endfor%}
-        
+    <div class="row">
+        <div class="col-md-12">
+            {% for i in charts %}
+                <h5 style="color: #060547; font-family: sans-serif; margin-top: 20px;">{{ i[0] }}</h5>
+                <div class="progress">
+                    <div class="progress-bar" style="width:{{ i[2] }}%; background-color: #ed2d2d;">
+                        {{ i[0] }}&nbsp;{{ i[2] }}%
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
 </div>
 
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider-min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('.flexslider').flexslider({
+            animation: "slide",
+            controlNav: true,
+            directionNav: false,
+            slideshowSpeed: 5000,
+            animationSpeed: 600
+        });
+    });
+</script>
 
+</body>
+</html>
