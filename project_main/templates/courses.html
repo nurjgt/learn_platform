@@ -3,61 +3,209 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Teach-Me &mdash; Courses</title>
+	<title>Teach-Me &mdash; About</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
 	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
 	<meta name="author" content="freehtml5.co" />
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
 
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
+	
+	<!-- Animate.css -->
 	<link rel="stylesheet" href="{{ url_for('static',filename='css/animate.css') }}">
+	<!-- Icomoon Icon Fonts-->
 	<link rel="stylesheet" href="{{ url_for('static',filename='css/icomoon.css') }}">
+	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="{{ url_for('static',filename='css/bootstrap.css') }}">
+
+	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="{{ url_for('static',filename='css/magnific-popup.css') }}">
+
+	<!-- Owl Carousel  -->
 	<link rel="stylesheet" href="{{ url_for('static',filename='css/owl.carousel.min.css') }}">
 	<link rel="stylesheet" href="{{ url_for('static',filename='css/owl.theme.default.min.css') }}">
+
+	<!-- Flexslider  -->
 	<link rel="stylesheet" href="{{ url_for('static',filename='css/flexslider.css') }}">
+
+	<!-- Pricing -->
+	<link rel="stylesheet" href="{{ url_for('static',filename='css/pricing.css') }}">
+
+	<!-- Theme style  -->
 	<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+
+	<!-- Modernizr JS -->
 	<script src="{{ url_for('static',filename='js/modernizr-2.6.2.min.js') }}"></script>
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
+	<style>
+		.animated-button {
+			position: relative;
+			display: flex;
+			align-items: center;
+			gap: 4px;
+			padding: 13px 30px;
+			border: 4px solid;
+			border-color: transparent;
+			font-size: 12px;
+			border-radius: 100px;
+			font-weight: 600;
+			color: rgba(0, 0, 0, 0.9);
+			box-shadow: 0 0 0 2px #ffffff;
+			cursor: pointer;
+			overflow: hidden;
+			transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+			margin: 6px 0 6px 10px;
+		}
+
+		.animated-button svg {
+			position: absolute;
+			width: 24px;
+			fill: rgba(0, 0, 0, 0.9);
+			z-index: 9;
+			transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+		}
+
+		.animated-button .arr-1 {
+			right: 16px;
+		}
+
+		.animated-button .arr-2 {
+			left: -25%;
+		}
+
+		.animated-button .circle {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 20px;
+			height: 20px;
+			background-color: #c5e5e4;
+			border-radius: 50%;
+			opacity: 0;
+			transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+		}
+
+		.animated-button .text {
+			position: relative;
+			z-index: 1;
+			transform: translateX(-12px);
+			transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+		}
+
+		.animated-button:hover {
+			box-shadow: 0 0 0 12px transparent;
+			color: rgba(0, 0, 0, 0.9);
+			border-radius: 12px;
+		}
+
+		.animated-button:hover .arr-1 {
+			right: -25%;
+		}
+
+		.animated-button:hover .arr-2 {
+			left: 16px;
+		}
+
+		.animated-button:hover .text {
+			transform: translateX(12px);
+		}
+
+		.animated-button:hover svg {
+			fill: rgba(0, 0, 0, 0.9);
+		}
+
+		.animated-button:active {
+			scale: 0.95;
+			box-shadow: 0 0 0 4px greenyellow;
+		}
+
+		.animated-button:hover .circle {
+			width: 220px;
+			height: 220px;
+			opacity: 1;
+		}
+		.col-xs-12.text-right {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			gap: 10px; /* Расстояние между элементами */
+		}
+
+		.fh5co-social {
+			display: flex;
+			gap: 10px; /* Расстояние между иконками */
+			margin: 0; /* Уберите возможные отступы */
+			padding: 0;
+		}
+
+		.fh5co-social li {
+			list-style: none; /* Уберите маркеры списка */
+		}
+
+	</style>
 	</head>
 	<body>
+		
 	<div class="fh5co-loader"></div>
+	
 	<div id="page">
 	<nav class="fh5co-nav" role="navigation">
 		<div class="top">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 text-right">
-						<p class="num">Call: +7 777 777 77 77</p>
+						<p class="num">Call: +7 707 292 8239</p>
 						<ul class="fh5co-social">
-							<li><a href="#"><i class="icon-facebook2"></i></a></li>
-							<li><a href="https://t.me/Innowacja_bot"><i class="icon-telegram"></i></a></li>
-							<li><a href="#"><i class="icon-instagram"></i></a></li>
-							<li><a href="https://wa.me/+77072928239 "><i class="icon-whatsapp"></i></a></li>
+							<li><a href="https://t.me/nurkhnur"><i class="icon-telegram"></i></a></li>
+							<li><a href="https://www.instagram.com/nuurjgt/"><i class="icon-instagram"></i></a></li>
+							<li><a href="https://wa.me/+77072928239"><i class="icon-whatsapp"></i></a></li>
 						</ul>
-					</div>
+						<a href="{{ url_for('login') }}">
+							<button class="animated-button">
+								<svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
+									<path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+								</svg>
+								<span class="text">L O G I N</span>
+								<span class="circle"></span>
+								<svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
+									<path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+								</svg>
+							</button>
+						</a>
+					</div>					
 				</div>
 			</div>
 		</div>
+		
 		<div class="top-menu">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-2">
-						<div id="fh5co-logo"><a href="{{ url_for('.indexc') }}"><i class="icon-study"></i>Teach-Me<span>.</span></a></div>
+						<div id="fh5co-logo"><a href="index.html"><i class="icon-study"></i>Teach-Me<span>.</span></a></div>
 					</div>
 					<div class="col-xs-10 text-right menu-1">
 						<ul>
 							<li><a href="{{ url_for('indexc') }}"><b>Home</b></a></li>
-							<li class="active"><a href="{{ url_for('courses') }}"><b>Courses</b></a></li>
+							<li><a href="{{ url_for('courses') }}"><b>Courses</b></a></li>
 							<li><a href="{{ url_for('Quizz') }}"><b>Quizz</b></a></li>
-							<li><a href="{{ url_for('about') }}"><b>About</b></a></li>
+							<li class="active"><a href="{{ url_for('about') }}"><b>About</b></a></li>
+							
+							
 							<li><a href="{{ url_for('contact') }}"><b>Contact</b></a></li>
 							{% if login_button==1 %}
-							<li class="btn-cta"><a href="{{ url_for('login') }}"><span><b>Login</b></span></a></li>
+							<li class="btn-cta"><a href="{{ url_for('login') }}"><span><b>Login</b></span></a>
+							</li>
+
 							{% endif %}
 							{% if role ==2 and role != 1 and role != 3%}
 							<li class="btn-cta"><a href="#"><span><b>Create a Course</b></span></a></li>
@@ -72,13 +220,23 @@
 									<li><a href="{{ url_for('logout') }}">logout</a></li>
 								</ul>
 							</li>
+							<li>
+								<a href="{{ url_for('EditProfile') }}" class="account-icon">
+									<i class="icon-user"></i>
+									<span>{{ session['username'] }}</span> <!-- Отображение имени пользователя -->
+								</a>
+							</li>
 							{% endif %}
+							
+							
 						</ul>
 					</div>
 				</div>
+				
 			</div>
 		</div>
 	</nav>
+	
 
 	<aside id="fh5co-hero">
 		<div class="flexslider">
