@@ -60,8 +60,8 @@
             "cookie": "3wvbw4af8dghn9vv",
             "user_id": 1,
             "expires": 1734967772.7747982
-<<<<<<< HEAD
         },
+
         {
             "cookie": "u1663zhevcf95tih",
             "user_id": 4,
@@ -76,13 +76,6 @@
             "cookie": "n9dveuw4uqyl09zr",
             "user_id": 4,
             "expires": 1735595229.667691
-        },
-        {
-            "cookie": "ye2hyc7wizmfy5tf",
-            "user_id": 4,
-            "expires": 1735595245.41245
-=======
->>>>>>> 875cf4bc2909830cf8f73a5068e863fcbebd2dfc
         }
     ]
 }
