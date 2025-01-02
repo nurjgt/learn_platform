@@ -248,3 +248,53 @@ for template in remaining_templates:
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
+
+@app.route("/courses_csh", methods=["GET"])
+def courses_csh():
+    cookie = request.cookies.get("sessionid")
+    user = get_user_by_cookie(cookie)
+
+    if not user:
+        return redirect("/login")
+
+    return redirect(url_for('courses') + "#section")
+
+@app.route("/courses_go", methods=["GET"])
+def courses_csh():
+    cookie = request.cookies.get("sessionid")
+    user = get_user_by_cookie(cookie)
+
+    if not user:
+        return redirect("/login")
+
+    return redirect(url_for('courses') + "#section")
+
+@app.route("/courses_backend", methods=["GET"])
+def courses_csh():
+    cookie = request.cookies.get("sessionid")
+    user = get_user_by_cookie(cookie)
+
+    if not user:
+        return redirect("/login")
+
+    return redirect(url_for('courses') + "#section")
+
+@app.route("/courses_sql", methods=["GET"])
+def courses_csh():
+    cookie = request.cookies.get("sessionid")
+    user = get_user_by_cookie(cookie)
+
+    if not user:
+        return redirect("/login")
+
+    return redirect(url_for('courses') + "#section")
+
+@app.route("/courses_python", methods=["GET"])
+def courses_csh():
+    cookie = request.cookies.get("sessionid")
+    user = get_user_by_cookie(cookie)
+
+    if not user:
+        return redirect("/login")
+
+    return redirect(url_for('courses') + "#section")

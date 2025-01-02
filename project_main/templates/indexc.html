@@ -148,18 +148,18 @@
 			display: flex;
 			align-items: center;
 			justify-content: flex-end;
-			gap: 10px; /* Расстояние между элементами */
+			gap: 10px; 
 		}
 
 		.fh5co-social {
 			display: flex;
-			gap: 10px; /* Расстояние между иконками */
-			margin: 0; /* Уберите возможные отступы */
+			gap: 10px;
+			margin: 0;
 			padding: 0;
 		}
 
 		.fh5co-social li {
-			list-style: none; /* Уберите маркеры списка */
+			list-style: none;
 		}
 
 	</style>
@@ -383,24 +383,28 @@
 			</div>
 			<div class="row courses-container" id="coursesContainer">
 				<div class="col-md-4 course" onclick="openCourseModal('https://www.youtube.com/embed/_uQrJ0TkZlc', 'Python for Beginners', 'Learn the basics of Python, including variables, loops, functions, and more.', 'test.html')">
-					<iframe class="video-preview" src="https://www.youtube.com/embed/_uQrJ0TkZlc" frameborder="0" allowfullscreen></iframe>
-					<h3>Course: Python for Beginners</h3>
+					<iframe style="border-radius: 12px; height: 178px;" class="video-preview" src="https://www.youtube.com/embed/_uQrJ0TkZlc" frameborder="0" allowfullscreen></iframe>
+					<h3 style="margin-top: 10px;">Course: Python for Beginners</h3>
 				</div>
 				<div class="col-md-4 course" onclick="openCourseModal('https://www.youtube.com/embed/gfkTfcpWqAY', 'C++/C# Programming', 'Master the basics of C++ and C# with hands-on examples and projects.', 'test.html')">
-					<iframe class="video-preview" src="https://www.youtube.com/embed/gfkTfcpWqAY" frameborder="0" allowfullscreen></iframe>
-					<h3>Course: C++/C# Programming</h3>
+					<iframe style="border-radius: 12px; height: 178px;" class="video-preview" src="https://www.youtube.com/embed/gfkTfcpWqAY" frameborder="0" allowfullscreen></iframe>
+					<h3 style="margin-top: 10px;">Course: C++/C# Programming</h3>
 				</div>
 				<div class="col-md-4 course" onclick="openCourseModal('https://www.youtube.com/embed/jFfo23yIWac', 'Go Programming', 'A comprehensive course on Go Programming Language.', 'test.html')">
-					<iframe class="video-preview" src="https://www.youtube.com/embed/jFfo23yIWac" frameborder="0" allowfullscreen></iframe>
-					<h3>Course: Go Programming</h3>
+					<iframe style="border-radius: 12px; height: 178px;" class="video-preview" src="https://www.youtube.com/embed/jFfo23yIWac" frameborder="0" allowfullscreen></iframe>
+					<h3 style="margin-top: 10px;">Course: Go Programming</h3>
 				</div>
 				<div class="col-md-4 course" onclick="openCourseModal('https://www.youtube.com/embed/yUOC-Y0f5ZQ', 'Product Manager', 'Learn how to become a successful Product Manager in this course.', 'test.html')">
-					<iframe class="video-preview" src="https://www.youtube.com/embed/yUOC-Y0f5ZQ" frameborder="0" allowfullscreen></iframe>
-					<h3>Course: Product Manager</h3>
+					<iframe style="border-radius: 12px; height: 178px;" class="video-preview" src="https://www.youtube.com/embed/yUOC-Y0f5ZQ" frameborder="0" allowfullscreen></iframe>
+					<h3 style="margin-top: 10px;">Course: Product Manager</h3>
 				</div>
 				<div class="col-md-4 course" onclick="openCourseModal('https://www.youtube.com/embed/xiUTqnI6xk8', 'SQL and Databases', 'This course will introduce you to SQL and database management systems.', 'test.html')">
-					<iframe class="video-preview" src="https://www.youtube.com/embed/xiUTqnI6xk8" frameborder="0" allowfullscreen></iframe>
-					<h3>Course: SQL and Databases</h3>
+					<iframe style="border-radius: 12px; height: 178px;" class="video-preview" src="https://www.youtube.com/embed/xiUTqnI6xk8" frameborder="0" allowfullscreen></iframe>
+					<h3 style="margin-top: 10px;">Course: SQL and Databases</h3>
+				</div>
+				<div class="col-md-4 course" onclick="openCourseModal('https://www.youtube.com/embed/lkIFF4maKMU?si=WZIJlyRWhFa7XMwM', 'SQL and Databases', 'This course will introduce you to SQL and database management systems.', 'test.html')">
+					<iframe style="border-radius: 12px; height: 178px;" class="video-preview" src="https://www.youtube.com/embed/lkIFF4maKMU?si=WZIJlyRWhFa7XMwM" frameborder="0" allowfullscreen></iframe>
+					<h3 style="margin-top: 10px;" >Course: JavaScript Concepts</h3>
 				</div>
 			</div>
 		</div>
@@ -438,32 +442,32 @@
 			<div class="row row-padded-mb">
 				<!-- Event 1: Hack4Future Hackathon -->
 				<div class="col-md-4 animate-box" style="padding: 15px;">
-					<div class="fh5co-event" style="padding: 0; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden;">
+					<div class="fh5co-event" style="padding: 0; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden; height: 300px;">
 						<h3 style="font-size: 22px; color: #333; margin-top: 15px; text-align: center;">
-							<a href="#" style="color: #007bff;">Hack4Future Hackathon Coming Soon</a>
+							<a href="#" style="color: #007bff;">Hack4Future Hackathon</a>
 						</h3>
-						<p style="font-size: 16px; color: #777; padding: 10px 15px;">Join us for an exciting hackathon where developers come together to innovate and solve real-world problems. This year, we focus on sustainable tech solutions.</p>
-						<p style="text-align: center; font-size: 16px; color: #ff5733; font-weight: bold;">Coming Soon</p>
+						<p style="font-size: 16px; color: #777; padding: 10px 15px;">Join us for an exciting hackathon where devel-<br>opers come together to innovate and solve real-world problems. This year, we focus on sustain-<br>able tech solutions.</p>
+						<p style="text-align: center; font-size: 16px; color: #ff5733; font-weight: bold; margin-top: 52px;">Coming Soon</p>
 					</div>
 				</div>
 				<!-- Event 2: Tech Conference -->
 				<div class="col-md-4 animate-box" style="padding: 15px;">
-					<div class="fh5co-event" style="padding: 0; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden;">
+					<div class="fh5co-event" style="padding: 0; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden; height: 300px;">
 						<h3 style="font-size: 22px; color: #333; margin-top: 15px; text-align: center;">
 							<a href="#" style="color: #28a745;">Tech Conference 2025</a>
 						</h3>
-						<p style="font-size: 16px; color: #777; padding: 10px 15px;">A global tech conference featuring speakers from top tech companies. Learn about the latest trends in AI, software development, and cybersecurity.</p>
-						<p style="text-align: center; font-size: 16px; color: #ff5733; font-weight: bold;">Coming Soon</p>
+						<p style="font-size: 16px; color: #777; padding: 10px 15px;">A global tech conference featuring speakers from top tech companies. Learn about the latest trends in AI, software development, and cyber-<br>security.</p>
+						<p style="text-align: center; font-size: 16px; color: #ff5733; font-weight: bold; margin-top: 52px;">Coming Soon</p>
 					</div>
 				</div>
 				<!-- Event 3: Web Development Bootcamp -->
 				<div class="col-md-4 animate-box" style="padding: 15px;">
-					<div class="fh5co-event" style="padding: 0; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden;">
+					<div class="fh5co-event" style="padding: 0; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden; height: 300px;">
 						<h3 style="font-size: 22px; color: #333; margin-top: 15px; text-align: center;">
 							<a href="#" style="color: #ffc107;">Web Development Bootcamp</a>
 						</h3>
 						<p style="font-size: 16px; color: #777; padding: 10px 15px;">A comprehensive 4-week bootcamp where you’ll learn HTML, CSS, JavaScript, and more, building your own web projects from scratch.</p>
-						<p style="text-align: center; font-size: 16px; color: #ff5733; font-weight: bold;">Coming Soon</p>
+						<p style="text-align: center; font-size: 16px; color: #ff5733; font-weight: bold; margin-top: 77px;">Coming Soon</p>
 					</div>
 				</div>
 			</div>
