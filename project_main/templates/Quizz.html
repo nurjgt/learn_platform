@@ -21,6 +21,8 @@
 	<meta name="twitter:image" content="" />
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400" rel="stylesheet">
@@ -173,12 +175,12 @@
 							<li><a href="#"><i class="icon-instagram"></i></a></li>
 							<li><a href="https://wa.me/+77072928239"><i class="icon-whatsapp"></i></a></li>
 						</ul>
-                        <a href="{{ url_for('index') }}">
+                        <a href="{{ url_for('login') }}">
 							<button class="animated-button">
 								<svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
 									<path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
 								</svg>
-								<span class="text">Profile</span>
+								<span class="text">L O G I N</span>
 								<span class="circle"></span>
 								<svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
 									<path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
@@ -224,21 +226,50 @@
 		</div>
 	</nav>
 
-    <aside id="fh5co-hero">
+	<aside id="fh5co-hero">
 		<div class="flexslider">
 			<ul class="slides">
 		   	<li style="background-image: url({{ url_for('static',filename='img/quizz.jpg')}});">
 		   		<div class="overlay-gradient"></div>
-		   		<div class="container">s
+		   		<div class="container">
 		   			<div class="row">
 			   			<div class="col-md-8 col-md-offset-2 text-center slider-text">
 			   				<div class="slider-text-inner">
-			   					<h1 class="heading-section">Course Quizzes</h1>
+			   					<h1>To earn the certificate, you must answer all questions correctly.</h1>
+									<h2>From the Qaz Digital</h2>
+									<p><a class="btn btn-primary btn-lg" href="{{ url_for('courses') }}">Start Learning Now!</a></p>
 			   				</div>
 			   			</div>
 			   		</div>
 		   		</div>
+                   <li style="background-image: url({{ url_for('static',filename='img/Quizz4.jpg')}});">
+                    <div class="overlay-gradient"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 text-center slider-text">
+                                <div class="slider-text-inner">
+                                    <h1>To earn the certificate, you must answer all questions correctly.</h1>
+                                    <h2>From the Kazakhstan team</h2>
+                                     <p><a class="btn btn-primary btn-lg btn-learn" href="{{ url_for('courses') }}">Start Learning Now!</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 		   	</li>
+		   	<li style="background-image: url({{ url_for('static',filename='img/Quizz3.jpg')}});">
+		   		<div class="overlay-gradient"></div>
+		   		<div class="container">
+		   			<div class="row">
+			   			<div class="col-md-8 col-md-offset-2 text-center slider-text">
+			   				<div class="slider-text-inner">
+			   					<h1>To earn the certificate, you must answer all questions correctly.</h1>
+			   					<h2>From the Qaz Digital</h2>
+									<p><a class="btn btn-primary btn-lg btn-learn" href="{{ url_for('courses') }}">Start Learning Now!</a></p>
+			   				</div>
+			   			</div>
+			   		</div>
+		   		</div>
+		   	</li>		   	
 		  	</ul>
 	  	</div>
 	</aside>
@@ -471,7 +502,7 @@
             // Signature and other certificate info
             doc.setFontSize(16);
             doc.text('Course Instructor:', 20, 130);
-            doc.text('From Innowacja Education Platform', 100, 130);
+            doc.text('From Qaz Digital Education Platform', 100, 130);
 
             doc.text('Congratulations on your achievement!', 105, 150, null, null, 'center');
 
@@ -497,21 +528,21 @@
     <div class="quiz-container" id="pythonQuiz">
         <h2>Quiz: Python for Beginners</h2>
         <div class="question">
-            <label>1. What is a variable in Python?</label>
+            <label><strong>1. What is a variable in Python?</strong></label>
             <input type="radio" name="python1" value="A"> A) A function to repeat code<br>
             <input type="radio" name="python1" value="B"> B) A container to store data<br>
             <input type="radio" name="python1" value="C"> C) A type of error message<br>
             <input type="radio" name="python1" value="D"> D) A debugging tool<br>
         </div>
         <div class="question">
-            <label>2. Which of the following is used to define a function in Python?</label>
+            <label><strong>2. Which of the following is used to define a function in Python?</strong></label>
             <input type="radio" name="python2" value="A"> A) function<br>
             <input type="radio" name="python2" value="B"> B) func<br>
             <input type="radio" name="python2" value="C"> C) def<br>
             <input type="radio" name="python2" value="D"> D) define<br>
         </div>
         <div class="question">
-            <label>3. What will the following code output: `print(2 + 3 * 2)`?</label>
+            <label><strong>3. What will the following code output: `print(2 + 3 * 2)`?</strong></label>
             <input type="radio" name="python3" value="A"> A) 10<br>
             <input type="radio" name="python3" value="B"> B) 12<br>
             <input type="radio" name="python3" value="C"> C) 8<br>
@@ -523,21 +554,21 @@
     <div class="quiz-container" id="cppQuiz">
         <h2>Quiz: C++/C# Programming</h2>
         <div class="question">
-            <label>1. In C++, which operator is used for input?</label>
+            <label><strong>1. In C++, which operator is used for input?</strong></label>
             <input type="radio" name="cpp1" value="A"> A) >> <br>
             <input type="radio" name="cpp1" value="B"> B) << <br>
             <input type="radio" name="cpp1" value="C"> C) : <br>
             <input type="radio" name="cpp1" value="D"> D) :: <br>
         </div>
         <div class="question">
-            <label>2. What is the purpose of the `using` directive in C#?</label>
+            <label><strong>2. What is the purpose of the `using` directive in C#?</strong></label>
             <input type="radio" name="cpp2" value="A"> A) To import namespaces<br>
             <input type="radio" name="cpp2" value="B"> B) To define a class<br>
             <input type="radio" name="cpp2" value="C"> C) To create a loop<br>
             <input type="radio" name="cpp2" value="D"> D) To declare a variable<br>
         </div>
         <div class="question">
-            <label>3. In C++, what is the correct syntax to create a pointer?</label>
+            <label><strong>3. In C++, what is the correct syntax to create a pointer?</strong></label>
             <input type="radio" name="cpp3" value="A"> A) int *ptr;<br>
             <input type="radio" name="cpp3" value="B"> B) int &ptr;<br>
             <input type="radio" name="cpp3" value="C"> C) int ptr;<br>
@@ -550,21 +581,21 @@
     <div class="quiz-container" id="goQuiz">
         <h2>Quiz: Go Programming</h2>
         <div class="question">
-            <label>1. What is the keyword used to declare a variable in Go?</label>
+            <label><strong>1. What is the keyword used to declare a variable in Go?</strong></label>
             <input type="radio" name="go1" value="A"> A) var<br>
             <input type="radio" name="go1" value="B"> B) let<br>
             <input type="radio" name="go1" value="C"> C) const<br>
             <input type="radio" name="go1" value="D"> D) define<br>
         </div>
         <div class="question">
-            <label>2. Which of the following is the correct way to write a function in Go?</label>
+            <label><strong>2. Which of the following is the correct way to write a function in Go?</strong></label>
             <input type="radio" name="go2" value="A"> A) func myFunction() {}<br>
             <input type="radio" name="go2" value="B"> B) function myFunction() {}<br>
             <input type="radio" name="go2" value="C"> C) def myFunction():<br>
             <input type="radio" name="go2" value="D"> D) fn myFunction()<br>
         </div>
         <div class="question">
-            <label>3. In Go, what is the default value of an uninitialized integer variable?</label>
+            <label><strong>3. In Go, what is the default value of an uninitialized integer variable?</strong></label>
             <input type="radio" name="go3" value="A"> A) 1<br>
             <input type="radio" name="go3" value="B"> B) 0<br>
             <input type="radio" name="go3" value="C"> C) nil<br>
@@ -577,21 +608,21 @@
 	<div class="quiz-container" id="PMQuiz">
 		<h2>Quiz: Product Manager</h2>
 		<div class="question">
-			<label>1. What is the primary responsibility of a Product Manager?</label>
+			<label><strong>1. What is the primary responsibility of a Product Manager?</strong></label>
 			<input type="radio" name="pm1" value="A"> A) Writing code<br>
 			<input type="radio" name="pm1" value="B"> B) Managing marketing campaigns<br>
 			<input type="radio" name="pm1" value="C"> C) Defining product vision and strategy<br>
 			<input type="radio" name="pm1" value="D"> D) Managing finances<br>
 		</div>
 		<div class="question">
-			<label>2. Which of the following is an important skill for a Product Manager?</label>
+			<label><strong>2. Which of the following is an important skill for a Product Manager?</strong></label>
 			<input type="radio" name="pm2" value="A"> A) Coding proficiency<br>
 			<input type="radio" name="pm2" value="B"> B) Communication and leadership<br>
 			<input type="radio" name="pm2" value="C"> C) Data analysis<br>
 			<input type="radio" name="pm2" value="D"> D) All of the above<br>
 		</div>
 		<div class="question">
-			<label>3. What is a Minimum Viable Product (MVP)?</label>
+			<label><strong>3. What is a Minimum Viable Product (MVP)?</strong></label>
 			<input type="radio" name="pm3" value="A"> A) A fully finished product<br>
 			<input type="radio" name="pm3" value="B"> B) A product with only core features for initial testing<br>
 			<input type="radio" name="pm3" value="C"> C) A product without any user interface<br>
@@ -603,21 +634,21 @@
 	<div class="quiz-container" id="SaDQuiz">
 		<h2>Quiz: SQL and Databases</h2>
 		<div class="question">
-			<label>1. What does SQL stand for?</label>
+			<label><strong>1. What does SQL stand for?</strong></label>
 			<input type="radio" name="sql1" value="A"> A) Structured Query Language<br>
 			<input type="radio" name="sql1" value="B"> B) Simple Query Language<br>
 			<input type="radio" name="sql1" value="C"> C) Sequential Query Language<br>
 			<input type="radio" name="sql1" value="D"> D) None of the above<br>
 		</div>
 		<div class="question">
-			<label>2. Which of the following SQL commands is used to retrieve data from a database?</label>
+			<label><strong>2. Which of the following SQL commands is used to retrieve data from a database?</strong></label>
 			<input type="radio" name="sql2" value="A"> A) SELECT<br>
 			<input type="radio" name="sql2" value="B"> B) INSERT<br>
 			<input type="radio" name="sql2" value="C"> C) UPDATE<br>
 			<input type="radio" name="sql2" value="D"> D) DELETE<br>
 		</div>
 		<div class="question">
-			<label>3. What does the `JOIN` keyword do in SQL?</label>
+			<label><strong>3. What does the `JOIN` keyword do in SQL?</strong></label>
 			<input type="radio" name="sql3" value="A"> A) Combines columns from multiple tables<br>
 			<input type="radio" name="sql3" value="B"> B) Combines rows from multiple tables<br>
 			<input type="radio" name="sql3" value="C"> C) Combines data from one table<br>
