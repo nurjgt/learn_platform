@@ -1,0 +1,8 @@
+<form method="POST" action="/edit_profile">
+    <input class="form-control" type="text" value="{{ user_information['first_name'] }}" name="first_name" />
+    <input class="form-control" type="text" value="{{ user_information['last_name'] }}" name="last_name" />
+    <input class="form-control" type="email" value="{{ user_information['email'] }}" name="email" />
+    <input class="form-control" type="text" value="{{ user_information['username'] }}" name="username" />
+    <input class="form-control" type="date" value="{{ user_information['birth_date'] }}" name="birth" />
+    <button type="submit">Save Changes</button>
+</form>
