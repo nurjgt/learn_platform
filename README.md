@@ -1,1 +1,2 @@
-У нас в университете в Польше было задание, сделать проект - Учебная платформа. Этот проект мы нашли в GitHub, и модифицировали под наши требования, затронули интерфейс и функционал. В итоге сдали проект и получили высшую оценку(5)
+At our university in Poland we had an assignment to make a project - Educational platform. We found this project on GitHub and modified it to our requirements, touched on the interface and functionality. As a result, we submitted the project and received the highest grade (5)
+This repository was used for educational purposes and I take no responsibility for anything related to its content.
